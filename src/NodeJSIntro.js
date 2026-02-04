@@ -1,4 +1,8 @@
-// note JS is runtime environment for executing JS code outside of browser
+// node.js is runtime environment for executing JS code outside of browser
+// "ryan dahl" is the creator of node.js and it was run using google chrome v8 engine and it was run in 2009
+// node.js is a server-side runtime environment that allows developers to run JavaScript code on the server side
+// etle jya sudhi 
+
 // now i start note in terminal using "node" command and exit from node using ".exit" or "ctrl + d"
 // now run node file using "node fname.js" for initializing note using "npm init" 
 // then setup package name to node.js project and create index.js file and run using "node index.js"
