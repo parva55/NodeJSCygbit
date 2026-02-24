@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "node src/NodeJS/Modules/HTTPModule.js",
-    "super-server": "nodemon src/NodeJS/Modules/HTTPModule.js",
+    "server": "node src/Modules/HTTPModule.js",
+    "super-server": "nodemon src/Modules/HTTPModule.js",
     "render-dep": "render services",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -61,7 +61,6 @@ console.log("sortDemo", sortDemo);
 
 
 
-
 // Topic :- Object
 // Object is containing all types of data values in key value pair
 // {} this is blank object
@@ -90,7 +89,6 @@ console.log(objDemo);
 
 
 
-
 // Topic :- Function
 // also finding length of function it is num of params
 function abcd(a, b, c, d) {}
@@ -101,8 +99,6 @@ function abcd(a, b, c, d) {
   return a + b + c + d;
 }
 console.log("fun return", abcd(1, 2, 3, 4));
-
-
 
 
 
@@ -119,14 +115,13 @@ async function fetchData() {
 fetchData(); 
 
 
-
-
-
 // async call without function and return json data
 // with out async we can use await it is not run now
 // var res = await fetch("https://randomuser.me/api/");
 // var data = await res.json();
 // console.log("data", data);
+
+
 
 // Topic :- Promise
 // Promise is object that represent future value
