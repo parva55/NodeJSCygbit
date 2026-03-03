@@ -49,9 +49,68 @@ fs.rename("./local/writetext2.txt", "./local/writetext3.txt", (err) => {
   }
 });
 
+// copy a file it is create a new file with the same content of the existing file
+fs.copyFile("./local/readtext.txt", "./local/copy/copytext.txt", (err) => {
+  if (err) {
+    console.error("Error copying file:", err);
+  }
+});
+
 // Delete a file it is remove the file from the system
 fs.unlink("./local/writetext3.txt", (err) => {
   if (err) {
     console.error("Error deleting file:", err);
+  }
+});
+
+// check if file exists it is check the file is exist or not
+fs.access("./local/readtext.txt", fs.constants.F_OK, (err) => {
+  if (err) {
+    console.error("File does not exist:", err);
+  } else {
+    console.log("File exists");
+  }
+});
+
+// delete a empty folder it is remove the folder from the system
+fs.rmdir("./local/copy", (err) => {
+  if (err) {
+    console.error("Error deleting folder:", err);
+  }
+});
+// we pass the parameter recursive: true to delete a folder with content it is giving warning
+fs.rmdir("./local/copy", { recursive: true }, (err) => {
+  if (err) {
+    console.error("Error deleting folder:", err);
+  }
+});
+
+// also use fs.rm() method to delete a folder with content it is not giving warning if the folder is not empty
+fs.rm("./local/copy", (err) => {
+  if (err) {
+    console.error("Error deleting folder:", err);
+  }
+});
+
+// create a folder it is create a new folder in the system it is hiden folder because it is start with dot
+fs.mkdir("./local/newfolder", (err) => {
+  if (err) {
+    console.error("Error creating folder:", err);
+  }
+});
+
+// create a folder with visible in system
+fs.mkdir("./local/newfolder2", { recursive: true }, (err) => {
+  if (err) {
+    console.error("Error creating folder:", err);
+  }
+});
+
+// read the content of the folder it is read the content of the folder and return an array of file and folder name
+fs.readdir("./local", (err, files) => {
+  if (err) {
+    console.error("Error reading folder:", err);
+  } else {
+    console.log("Folder content:", files);
   }
 });

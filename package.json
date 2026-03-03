@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "node src/Modules/HTTPModule.js",
-    "super-server": "nodemon src/Modules/HTTPModule.js",
+    "fs": "node src/Modules/FSModule.js",
+    "http:server": "node src/Modules/HTTPModule.js",
+    "http:super-server": "nodemon src/Modules/HTTPModule.js",
     "render-dep": "render services",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "express" : "node src/ExpressJSIntro.js",
+    "express:super" : "nodemon src/ExpressJSIntro.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo": "echo \"Hello, World!\"",
+    "extra": "node src/extra.js"
   },
-  "author": "",
+  "author": "Parva Shah",
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0",

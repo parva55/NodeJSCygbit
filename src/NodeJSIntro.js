@@ -22,6 +22,7 @@
 // ES6 modules are used in modern JavaScript and we can use it using "import"
 // --> we can also use "import" in node.js by using "type": "module" in package.json file
 // --> or by using .mjs extension for the file
+// in JS callback means function that is passed as an argument to another function and it is executed after the completion of the main function
 
 // there are three type of commoponents 1) filebased 2) buildIn 3) third party
 // built-in modules are the modules that come with Node.js by default, such as 'fs', 'path', 'os', etc.
@@ -31,7 +32,28 @@
 // promise based modules are the modules that return a promise, such as 'node:fs/promises', 'axios', etc.
 // callback based modules are the modules that use callbacks to handle asynchronous operations, such as 'node:fs', 'http', etc.
 
-// to run NodeJS.js file we need to run "node src/NodeJS.js" in terminal
+// NPM is a package manager for Node.js that allows developers to install and manage third-party modules and packages for their projects.
+// package are is use by installing them from NPM and modules are pre installed code that is core of node.js
+// npm is used to install or uninstall dependencies or devdependencies for the project and it also helps to manage the version of the packages and their dependencies
+// dependencies are the packages that are required for the project to run 
+// devDependencies are the packages that are required for development purposes only and not required for production
+
+// install package using "npm install <package-name>" and uninstall using "npm uninstall <package-name>"
+// we can also install package globally using "npm i -g <package-name>" and uninstall using "npm uninstall -g <package-name>"
+// for specific version of package we can use "npm i <package-name>@<version>" and uninstall using "npm uninstall <package-name>@<version>"
+// we can also use "npx <package-name>" to run the package without installing it globally 
+// node_modules folder is created in the project directory when we install any package and it contains all the installed packages and their dependencies
+// "have evu samjie ke ek npm package install karyu ane e bija package per depend hoy to e package pn node_modules folder ma install thase ane e package ni andar jya sudhi depend hoy tya sudhi install thase"
+
+// package.json file has sripts section where we can define custom scripts for our project and we can run those scripts using "npm run <script-name>" in terminal
+// for example we can define a script "start" that runs "node src/Modules/HTTPModule.js" and we can run it using "npm start" in terminal
+// "to gana commands ma npm run aave che and npm start ma run nthi aavtu enu reason su che"
+// "node install karie tyare ena paths ma start and test commond run aave che etle sript ma run nhi aave baki badha scripts ma run add karvu padse"
+// "etle jyare npm pachi run aave etle e script ma find karse ene"
+// we are creating scripts in package.json file for ex: we print "Hello, World!" using "npm run demo" in terminal
+// also combine multiple commands using "&&" in script
+
+// to run NodeJS.js file we need to run "node src/NodeJS.js" in terminal`
 // to run FSModule.js file we need to run "node src/Modules/FSModule.js" in terminal
 // to run PathModule.js file we need to run "node src/Modules/PathModule.js" in terminal
 // to run OSModule.js file we need to run "node src/Modules/OSModule.js" in terminal
@@ -39,11 +61,10 @@
 // to run PokemonModule.js file we need to run "node src/Modules/PokemonModule.js" in terminal
 
 // nodemon is use in terminal to run node.js file and it will automatically restart the server when we make changes in the file
-// "npm install nodemon -g" // to install nodemon globally
+// "npm install nodemon -g --save-dev" // to install nodemon globally and save it as dev dependency in package.json file
 // "nodemon src/Modules/PokemonModule.js" to run HTTPModule.js file using nodemon
+// if abouve command not work then use "npx nodemon src/Modules/PokemonModule.js" without installing nodemon it works globally
 
-// in http module we create server using http.createServer() method
-// and we can handle different routes using if else statements
 
 // now we deploy this server on render.com using git
 // to deploy this server on render we need to create a render Web Service and then push the code to git
@@ -63,3 +84,5 @@
 // we can also use "render deploys create[SERVICE_ID]" to create new deploy of the service
 // we can also use "render logs[SERVICE_ID]" to see the logs of the server
 // we can also use "render restart[SERVICE_ID]" to restart the server
+
+

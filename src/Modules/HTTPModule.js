@@ -1,8 +1,14 @@
+// http and https aa ej rule che ene follow karya vager internet pr kasu kari sakay nhi (request and response) 
+// http and https are modules that are used to create web servers and handle HTTP requests and responses.
+
+// in http module we create server using http.createServer() method
+// and we can handle different routes using if else statements
+
 const http = require("http");
 const fs = require("fs");
 
 // PORT 80 is reserved for HTTP and port 443 is reserved for HTTPS
-const PORT = process.env.PORT || 8200; // Define the port number for the server
+const PORT = process.debugPort || 8200; // Define the port number for the server
 const HOSTNAME = "localhost"; // Define the hostname for the server
 const Home = fs.readFileSync("./index.html", "utf-8");
 
