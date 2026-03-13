@@ -78,6 +78,8 @@
 // > git branch -D <branch_name> --> it is a command to force delete the specified branch.
 // it is used when we want to delete a branch that has unmerged changes or when we want to delete a branch that is not fully merged with the main branch.
 
+// > git diff <branch_name> --> it is a command to show the differences between the current branch and the specified branch. it is used when we want to see the changes that have been made in the specified branch compared to the current branch.
+
 // > git merge <branch_name> --> it is a command to merge the specified branch into the current branch. 
 // it is used when we want to combine the changes from one branch to another. for example, when we want to merge a feature branch into the main branch after completing the work on that feature.
 
