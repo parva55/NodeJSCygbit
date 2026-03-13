@@ -84,7 +84,7 @@
 
 // > git merge <branch_name> --> it is a command to merge the specified branch into the current branch. 
 // it is used when we want to combine the changes from one branch to another. for example, when we want to merge a feature branch into the main branch after completing the work on that feature.
-
+// resolve merge conflicts --> it is a process of resolving the conflicts that arise when merging two branches that have conflicting changes. and it is not automatically resolved by git. we have to manually edit the conflicting files and then stage and commit the changes to complete the merge process.
 
 
 // extra commonds
