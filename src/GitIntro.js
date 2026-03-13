@@ -60,8 +60,10 @@
 // > git commit -m "message" --> it is a command to commit the staged changes with a message that describes the changes.
 // > git push origin main --> it is a command to upload committed local changes to the remote repo on github. 
 // "origin" is the name of the remote repo and "main" is the name of the branch.
-// > git push -u origin main --> it is a command to push the changes to the remote repo and also set the upstream branch. it is used when we want to push the changes for the first time to the remote repo. after running this command, we can simply run "git push" to push the changes in future without specifying the remote and branch name.
-
+// > git push -u origin main --> it is a command to push the changes to the remote repo and also set the upstream branch.
+// it is used when we want to push the changes for the first time to the remote repo. after running this command, we can simply run "git push" to push the changes in future without specifying the remote and branch name.
+// > git pull origin main --> it is a command to fetch and merge the changes from the remote repo to the local repo. 
+// it is used when we want to update our local repo with the latest changes from the remote repo.
 
 // now we work on branches and merge the branches
 // > git branch --> it is a command to list all the branches in the local repository and working branch.
