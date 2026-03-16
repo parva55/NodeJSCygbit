@@ -84,7 +84,24 @@
 
 // > git merge <branch_name> --> it is a command to merge the specified branch into the current branch. 
 // it is used when we want to combine the changes from one branch to another. for example, when we want to merge a feature branch into the main branch after completing the work on that feature.
+// resolve merge conflicts --> it is a process of resolving the conflicts that arise when merging two branches that have conflicting changes. and it is not automatically resolved by git. we have to manually edit the conflicting files and then stage and commit the changes to complete the merge process.
 
+// Undoing changes in git
+// 1) staged changes means changes are added in stage area but not committed yet
+// > git reset <file_name> --> it is a command to unstage the changes in the specified file. 
+// it is used when we want to remove the changes from the staging area and keep the changes in the working directory.
+// > git reset --> it is a command to unstage all the changes in the staging area.
+// it is used when we want to remove all the changes from the staging area and keep the changes in the working directory.
+
+// 2) committed changes for one commit means changes are committed in the local repository but not pushed to the remote repository.
+// > git reset --soft HEAD~1 --> it is a command to undo the last commit and keep the changes in the staging area. 
+// it is used when we want to undo the last commit but keep the changes in the staging area so that we can modify the commit message or add more changes before committing again.
+// > git reset --hard HEAD~1 --> it is a command to undo the last commit and discard all the changes in the working directory. 
+// it is used when we want to undo the last commit and discard all the changes in the working directory. be careful while using this command as it will permanently delete all the changes in the working directory.
+
+// 3) committed changes for multiple commits means changes are committed in the local repository but not pushed to the remote repository.
+// > git reset --soft HEAD~<n> --> it is a command to undo the last <n> commits and keep the changes in the staging area.
+// > git reset --hard HEAD~<n> --> it is a command to undo the last <n> commits and discard all the changes in the working directory.
 
 // extra commonds
 // ls -a --> shows all the files and folders in the current directory including hidden files and folders.
