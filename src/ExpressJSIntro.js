@@ -1,5 +1,6 @@
 // "express js etle framework che je flow aape che kam karva mate no ane badhi requests and responses handle kare che"
-// "react js etle tools aape che kam karva mate na"
+// "react js etle library che je tools aape che kam karva mate na"
+ 
 // roles of express js is receive request, process request, create route, process data, send response, handle errors, convert blob to json, separate get and post requests, connect database to server,  etc.
 // Express js is a web framework for node.js that allows us to create web applications and APIs easily and it is built on top of http module of node.js
 // it provides a lot of features such as routing, middleware, template engine, etc. that makes it easier to create web applications and APIs

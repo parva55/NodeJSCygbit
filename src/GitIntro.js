@@ -82,7 +82,7 @@
 // it is used when we want to combine the changes from one branch to another. for example, when we want to merge a feature branch into the main branch after completing the work on that feature.
 // resolve merge conflicts --> it is a process of resolving the conflicts that arise when merging two branches that have conflicting changes. and it is not automatically resolved by git. we have to manually edit the conflicting files and then stage and commit the changes to complete the merge process.
 
-// Undoing changes in git
+// Undoing changes in git not in github tree
 // 1) staged changes means changes are added in stage area but not committed yet
 // > git reset <file_name> --> it is a command to unstage the changes in the specified file.
 // > git reset --> it is a command to unstage all the changes in the staging area.
@@ -113,6 +113,8 @@
 // > git stash apply <stash_id> --> it is a command to apply the specified stashed changes to the working directory.
 // > git stash drop <stash_id> --> it is a command to delete the specified stashed changes from the stash list.
 
+// fork means to create a copy of a repository in your own github account. it allows you to make changes to the code without affecting the original repository. you can later submit a pull request to the original repository to merge your changes.
+// fork is a rough copy of the original repository.
 
 // extra commonds
 // ls -a --> shows all the files and folders in the current directory including hidden files and folders.
