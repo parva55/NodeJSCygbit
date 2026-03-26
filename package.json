@@ -4,20 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "fs": "node src/Modules/FSModule.js",
     "http:server": "node src/Modules/HTTPModule.js",
     "http:super-server": "nodemon src/Modules/HTTPModule.js",
-    "render-dep": "render services",
-    "express" : "node src/ExpressJSIntro.js",
-    "express:super" : "nodemon src/ExpressJSIntro.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "express": "node src/ExpressJSIntro1.js",
+    "express:super": "nodemon src/ExpressJSIntro2.js",
     "demo": "echo \"Hello, World!\"",
-    "extra": "node src/extra.js"
+    "render-dep": "render services"
   },
   "author": "Parva Shah",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "ejs": "^5.0.1",
     "express": "^5.1.0",
     "pokemon": "^3.3.0"
   },
