@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main w-full min-h-screen bg-zinc-500">
+      <div class="form">
+        <form
+          action="/create"
+          method="post"
+          class="block p-10 text-gray-700"
+        >
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Title"
+            class="border-2 border-gray-300 block rounded-md p-2 mb-4"
+          />
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Description"
+            class="border-2 border-gray-300 block resize-none rounded-md p-2 mb-4"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-300"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+      <div class="tasks mx-10">
+        <% if (files.length > 0) { %>
+        <% files.forEach((file) => { %>
+          <div
+            class="task bg-white p-4 rounded-md mb-4 rounded-md shadow-md w-72"
+          >
+            <h2 class="text-xl font-bold mb-2">Task Title</h2>
+            <p class="text-gray-700 inline-block mt-3">Task Description</p>
+          </div>
+        <% }) %>
+        <% } else { %>
+          <h2 class="text-gray-700">No tasks available.</h2>
+        <% } %>
+        </div>
+      </div>
+    </div>
+    <h1>Welcome to Practice Page</h1>
+  </body>
+  <script src="/javascripts/script.js"></script>
+</html>
