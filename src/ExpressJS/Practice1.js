@@ -10,13 +10,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  fs.readdir("public", (err, files) => {
+  fs.readdir(`./public/notes`, (err, files) => {
+    console.log('view files', files);
     res.render("prectice1", { files: files });
   });
 });
 
 app.post("/create", (req, res) => {
-  console.log(req.body);
+  console.log('create files',req.body);
+  fs.writeFile(`./public/notes/${req.body.title.split(' ').join('')}.txt`,req.body.description,(err)=>{
+    res.redirect(`/`);
+  })
 });
 
 app.listen(PORT);
